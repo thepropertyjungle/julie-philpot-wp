@@ -1,0 +1,48 @@
+/*
+    ATTENTION
+    =========
+    /blade-views/components/location-autocomplete.blade.php
+    
+    The location autocomplete uses property address
+    data within the website to autocomplete the
+    address_keyword within your search form(s).
+
+    This provides a similar function to Google Places
+    without using any Google APIs. It does not include
+    any geospacial functionality, so do not get it
+    confused. This feature cannot use bounding boxes,
+    centre points or radius features.
+*/
+
+@use "../abstracts/colors" as c;
+
+.locations_popup {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 60px;
+    background-color: c.$white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: c.$gray-200;
+    z-index: 100;
+    box-shadow: 5px 12px 16px -14px rgba(c.$gray-800, 1);
+}
+
+.location_link {
+    &:link {
+        display: block;
+        padding: 5px 10px;
+        color: c.$blue;
+        text-decoration: none;
+        &:hover,
+        &:focus,
+        &:active {
+            color: c.$green;
+        }
+    }
+}
+
+.selected_location_entry {
+    background-color: c.$gray-300;
+}

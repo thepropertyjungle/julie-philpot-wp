@@ -1,0 +1,11 @@
+/*
+    ATTENTION
+    =========
+    You can reference this partial in any Blade template
+    or using a shortcode within other pages to show featured
+    properties.
+
+    [blade_featured_properties view_name="partials/featured-properties" instruction_type="Sale" max_featured_results="6"]
+*/
+
+@use "../abstracts/colors" as c;

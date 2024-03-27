@@ -1,0 +1,20 @@
+/*
+    ATTENTION
+    =========
+    /blade-views/partials/copyright.blade.php
+
+    The referenced file above can be used as a shortcode to
+    easily add a copyright year and other company specific
+    data on your website. The classes included will help you
+    add your own custom styles.
+*/
+
+.tpj_copyright {
+    .tpj_copyright__symbol {
+    }
+    .tpj_copyright__currentYear {
+        margin-right: 5px;
+    }
+    .tpj_copyright__siteName {
+    }
+}

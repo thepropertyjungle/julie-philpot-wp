@@ -1,0 +1,23 @@
+/*
+    ATTENTION
+    =========
+    /blade-views/partials/search-results-corner-flash.blade.php
+
+    A universal include file used across multiple
+    templates.
+*/
+
+@use "../abstracts/colors" as c;
+
+.property__corner-flash {
+    position: absolute;
+    z-index: 1;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 0.5rem;
+    background-color: rgba(c.$blue, 0.4);
+    color: c.$white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}

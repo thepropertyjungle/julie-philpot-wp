@@ -1,0 +1,20 @@
+/*
+    ATTENTION
+    =========
+    /blade-views/components/global-load-more-info.blade.php
+
+    This shows the number of properties loaded and total number
+    of properties on a website for the 'Load More' search results.
+*/
+
+@use "../abstracts/colors" as c;
+
+.tpj_load-more-info {
+    .tpj_total-properties-loaded {
+        font-weight: bold;
+    }
+
+    .tpj_total-properties {
+        font-weight: bold;
+    }
+}

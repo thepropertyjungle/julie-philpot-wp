@@ -1,0 +1,58 @@
+/*
+    ATTENTION
+    =========
+    Your place for CSS helpers and fixes.
+*/
+
+@use "../abstracts/colors" as c;
+
+input[type="text"],
+input[type="email"] {
+    /*  Bootstrap 5 .form-control class
+        looks different when applied on
+        select and input elements. This
+        normalises it.
+    */
+    &.form-control {
+        padding: 0.375rem 0.75rem;
+        border-radius: 0.375rem;
+        border-color: c.$gray-300;
+    }
+}
+
+
+
+.gform_title {
+    display: none;
+}
+
+.gform_wrapper.gravity-theme textarea,
+.gform_wrapper.gravity-theme .gfield input, .gform_wrapper.gravity-theme .gfield select {
+   
+    border-radius: 40px;
+}
+
+.gform-field-label ,
+.gform_wrapper.gravity-theme .gfield_label {
+    font-family: var(--e-global-typography-text-font-family), Sans-serif;
+    font-size: var(--e-global-typography-text-font-size);
+    font-weight: var(--e-global-typography-text-font-weight);
+    line-height: var(--e-global-typography-text-line-height);
+
+}
+
+
+.gform_wrapper.gravity-theme .gform_footer input {
+    width: 100%; 
+    border-radius: 40px;
+    background-color: var(--e-global-color-accent);
+    border-color: var(--e-global-color-accent);
+    color: #fff;
+}
+
+
+.gform_wrapper.gravity-theme .gform_footer input:hover {
+
+    background-color: transparent;
+    color: var(--e-global-color-accent);
+}

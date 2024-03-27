@@ -1,0 +1,45 @@
+/*
+    ATTENTION
+    =========
+    /blade-views/partials/list-property.blade.php
+
+    This partial controls the display of property
+    data within the list search results.
+*/
+
+@use "../abstracts/colors" as c;
+
+.property {
+    margin-bottom: 2rem;
+    transition: all 0.3s;
+    .card {
+        position: relative;
+        &:hover,
+        &:active,
+        &:focus {
+            box-shadow: 0 0 9px lighten(c.$black, 85%);
+        }
+    }
+    &.property--featured {
+        background-color: rgba(c.$yellow, 0.3);
+    }
+
+    .property__image {
+    }
+
+    .property__meta {
+        .property__address {
+        }
+
+        .property__price {
+        }
+
+        .property__summary {
+        }
+
+        .property__rooms {
+            list-style: none;
+            padding: 0;
+        }
+    }
+}

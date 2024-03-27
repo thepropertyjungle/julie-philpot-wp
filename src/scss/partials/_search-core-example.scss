@@ -1,0 +1,19 @@
+/*
+    ATTENTION
+    =========
+    /blade-views/partials/search-core-example.blade.php
+
+    Please make sure you have set your search pages
+    within your website and created your Global
+    Dynamic Options.
+
+    You'll need to add your main search page to
+    the forms action="" attribute.
+
+    E.g. {{ $global_options['dynamic_options']['search_list']['permalink'] }}
+
+    If in doubt, please refer to:
+    https://tpjwiki.wpengine.com/wordpress/tpj-plugin-global-options-explained/
+*/
+
+@use "../abstracts/colors" as c;

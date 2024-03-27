@@ -1,0 +1,17 @@
+/*
+        ATTENTION
+        =========
+        /blade-views/partials/search-elementor-popup-example.blade.php
+
+        This search form is specific to displaying within an Elementor
+        popup. If you plan to use a search form in an Elementor popup
+        on your website, this is the one to use. Elementor injects
+        popups when required, and does not always render them in the
+        HTML. This means it can affect JavaScript behaviour.
+
+        This is a starter search form to get you going, it does not
+        include all possible query variables, but it does cover most
+        use cases.
+*/
+
+@use "../abstracts/colors" as c;

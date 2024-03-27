@@ -1,0 +1,16 @@
+/*
+    ATTENTION
+    =========
+    /blade-views/components/map-property-single.blade.php
+
+    This is used on single-property.blade.php to
+    show a Google Map using the properties
+    latitude and longitude data.
+*/
+
+@use "../abstracts/colors" as c;
+
+.property-map {
+    border: 1px solid c.$gray-300;
+    min-height: 450px;
+}

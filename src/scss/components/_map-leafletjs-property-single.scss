@@ -1,0 +1,16 @@
+/*
+    ATTENTION
+    =========
+    /blade-views/components/map-leafletjs-property-single.blade.php
+
+    You can swap Google Maps out with a Leaflet Map using this component.
+
+    Please see /blade-views/single-property.blade.php line: 106
+*/
+
+@use "../abstracts/colors" as c;
+
+#leaflet-map-single-property-container {
+    border: 1px solid c.$gray-300;
+    min-height: 450px;
+}

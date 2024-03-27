@@ -1,0 +1,16 @@
+/*
+    ATTENTION
+    =========
+    /src/scss/components/map-property-single-embedded.scss
+
+    You can use this component in your single-property.blade.php
+    file instead of /blade-views/components/map-property-single.blade.php
+
+    This file will use the standard Google Maps iFrame embed method.
+*/
+
+@use "../abstracts/colors" as c;
+
+.property-map-embedded {
+    border: 1px solid c.$gray-300;
+}

@@ -1,0 +1,40 @@
+/*
+    ATTENTION
+    =========
+    /blade-views/partials/rest/map-info-window.blade.php
+
+    This styles the info window on Google and LeafletJS
+    property search maps.
+*/
+
+@use "../../abstracts/colors" as c;
+
+.map-info-window {
+    width: 250px;
+    text-align: center;
+
+    .map-info-window__image {
+        border: 1px solid c.$gray-300;
+        margin-bottom: 10px;
+    }
+
+    .map-info-window__address {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .map-info-window__price {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .map-info-window__rooms {
+        list-style: none;
+        padding: 0;
+        li {
+            display: inline-block;
+        }
+    }
+}

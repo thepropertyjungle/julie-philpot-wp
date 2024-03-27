@@ -1,0 +1,19 @@
+/*
+    ATTENTION
+    =========
+    /blade-views/partials/pagination.blade.php
+
+    Default pagination partial for your property
+    search results.
+*/
+
+@use "../abstracts/colors" as c;
+
+nav {
+    .pagination {
+        .page-item {
+            .page-link {
+            }
+        }
+    }
+}

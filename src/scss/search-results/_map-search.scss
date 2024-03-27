@@ -1,0 +1,17 @@
+/*
+    ATTENTION
+    =========
+    /blade-views/components/map-properties-search.blade.php
+
+    This page is used for search results displayed on
+    a Google Map.
+
+    Pay attention to the @include('components/map-properties-search').
+    This is the component that displays your Google Map.
+*/
+
+@use "../abstracts/colors" as c;
+
+.map_properties_no {
+    font-weight: bold;
+}

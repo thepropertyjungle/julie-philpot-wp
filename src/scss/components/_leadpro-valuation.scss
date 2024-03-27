@@ -1,0 +1,31 @@
+/*
+    ATTENTION
+    =========
+    /blade-views/components/leadpro-valuation.blade.php
+
+    Providing you have a valid LeadPro API Key added to
+    your websites credentials, you can use their online
+    valuation form and embed it on your pages using a
+    simple shortcode.
+
+    [blade_dynamic_shortcode view_name="components/lead-pro-valuation"]
+*/
+
+@use "../abstracts/colors" as c;
+
+#leadPro-val {
+    textarea {
+        height: 150px;
+    }
+    .tpj-postcode-error {
+        // This class is used within the JavaScript
+        color: c.$red;
+        display: none;
+    }
+
+    .tpj-form-general-errors {
+        p {
+            color: c.$red;
+        }
+    }
+}

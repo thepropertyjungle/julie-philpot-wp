@@ -1,0 +1,201 @@
+/*
+    Helpers TOC
+*/
+
+@use "forms";
+@use "hrefs";
+@use "lazy-load-html";
+
+
+p {
+    margin-top: 0;
+    margin-bottom: 0rem !important;
+}
+
+
+
+
+/* nav */
+.main-nav.elementor-sticky--effects {
+    background-color: var(--e-global-color-d04156f) !important;
+}
+
+.main-nav.elementor-sticky--effects .nav-items .elementor-nav-menu--main .elementor-item {
+color:var(--e-global-color-text);
+}
+
+
+
+.main-nav .nav-btn .elementor-button {
+    border-color: var(--e-global-color-e8a252e);
+    color: var(--e-global-color-e8a252e);
+    
+    }
+    
+
+.main-nav.elementor-sticky--effects .nav-btn .elementor-button {
+border-color: var(--e-global-color-primary);
+color: var(--e-global-color-primary);
+
+}
+
+.main-nav .nav-btn .elementor-button:hover,
+.main-nav.elementor-sticky--effects .nav-btn .elementor-button:hover {
+    background-color: var(--e-global-color-primary);
+    color: white;
+    
+    }
+
+.main-nav.elementor-sticky--effects .standard-logo {
+    display:none;
+}
+
+.main-nav.elementor-sticky--effects .color-logo {
+    display:block;
+}
+
+
+
+.main-nav.elementor-sticky--effects > div > div.elementor-element > div.elementor-list-item-link-inline > div > ul > li > a > span.elementor-icon-list-icon > svg > g > path,
+.main-nav.elementor-sticky--effects > div > div > div.tab-nav > div > div > div > div > svg > g > path {
+    stroke:var(--e-global-color-text) ;
+    fill:none;
+}
+
+ 
+.footer-btn .elementor-button {
+
+    @media (max-width:767px){
+
+        width: 100% ;
+    }
+}
+
+
+.main-nav > div > div.elementor-element > div.elementor-element.tab-nav.uael-submenu-open-hover > div > div > nav {
+    left: unset !important;
+    right: 0px;
+}
+
+
+
+a:active, a:hover {
+    color: var(--e-global-color-primary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//home page 
+
+
+//featured properties 
+
+.for-sale.disabled .elementor-button,
+.sold-btn.disabled .elementor-button {
+    border-width: 0px 0px 0px 0px !important;
+    color: #A09BAE !important;
+}
+
+
+.for-sale.disabled:hover .elementor-button,
+.sold-btn.disabled:hover .elementor-button {
+color: var(--e-global-color-accent) !important; 
+}
+
+
+
+.index-featured img {
+    height: 314px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+} 
+
+
+.card-body {
+    background-color: #fff; 
+    padding: 30px 0px 0px 0px;
+}
+
+.property-grid.property--featured {
+    background-color: #fff !important;
+    border:0px !important;
+}
+
+
+.card-title.property__address {
+    font-family: var(--e-global-typography-af6fcba-font-family), Sans-serif;
+    font-size: var(--e-global-typography-af6fcba-font-size);
+    font-weight: var(--e-global-typography-af6fcba-font-weight);
+    line-height: var(--e-global-typography-af6fcba-line-height);
+    letter-spacing: var(--e-global-typography-af6fcba-letter-spacing);
+    word-spacing: var(--e-global-typography-af6fcba-word-spacing);
+}
+
+.card-title.property__price {
+    font-family: var(--e-global-typography-text-font-family), Sans-serif;
+    font-size: var(--e-global-typography-text-font-size);
+    font-weight: var(--e-global-typography-text-font-weight);
+    line-height: var(--e-global-typography-text-line-height);
+
+}
+
+.property-grid:active, .property-grid:focus, .property-grid:hover {
+    -webkit-box-shadow: 0 0 0px transparent !important;
+    box-shadow: 0 0 0px transparent !important;
+}
+
+
+
+
+
+.featured-props {
+    column-gap: 30px;
+    display: inline-flex;
+    row-gap:16px
+
+}
+
+.featured-props .col {
+    flex: 3 3;
+    width: 33.33%;
+    padding:0px !important;
+
+
+    @media (max-width:767px) {
+
+    flex: auto;
+    width: 100%;
+    }
+}
+
+
+.featured .container {
+    max-width: unset;
+}
+
+
+
+
+.full-width .elementor-button {
+width: 100%;
+justify-content: center;
+display: flex;
+
+}
+
+.full-width .elementor-button .elementor-button-content-wrapper{
+max-width: fit-content;
+justify-content: center;
+}

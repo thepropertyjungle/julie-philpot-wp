@@ -1,0 +1,16 @@
+/*
+    ATTENTION
+    =========
+    /blade-views/components/qr.blade.php
+
+    With this file, you can display a QR code
+    on your /blade-views/single-property.blade.php file.
+
+    Check the TPJ Settings within WP Admin for style and
+    logo options.
+*/
+
+@use "../abstracts/colors" as c;
+
+.tpj_qr_canvas_ui {
+}

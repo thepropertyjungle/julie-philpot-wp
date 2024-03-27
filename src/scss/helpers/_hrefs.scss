@@ -1,0 +1,11 @@
+/*
+    ATTENTION
+    =========
+    Overrides the parent themes default styles
+    for all hrefs.
+*/
+
+a {
+    text-decoration: none !important;
+    transition: all 0.3s;
+}

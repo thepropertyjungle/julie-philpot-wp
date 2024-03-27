@@ -1,0 +1,12 @@
+/*
+Nav SCSS
+*/
+
+@use "forms";
+@use "hrefs";
+@use "lazy-load-html";
+
+
+.main-nav.elementor-sticky--effects {
+    background-color: var(--e-global-color-d04156f);
+}

@@ -1,0 +1,35 @@
+/*
+    ATTENTION
+    =========
+    /blade-views/components/mortgage-calculator.blade.php
+
+    You can include this in your /blade-views/single-property.blade.php
+    file using the @include method below:
+
+    @include('components/mortgage-calculator', [
+        'loan_amount' => 200000, 
+        'length_of_loan_in_years' => 25, 
+        'interest_rate' => 2.9, 
+        'autocalculate_if_preffield' => true, 
+        'use_inline_currency_format_on_load' => false, // override default
+        'use_inline_currency_format' => false, // override default
+        'use_currency_symbol' => '£', // override default
+    ])
+*/
+
+@use "../abstracts/colors" as c;
+
+#mortgage_calculator {
+}
+
+.mortgage_calculator_success {
+    background-color: rgba(c.$green, 0.3);
+    padding: 20px;
+    #mortgage_calculator_success_value {
+    }
+}
+
+#mortgage_calculator_error {
+    background-color: rgba(c.$red, 0.3);
+    padding: 20px;
+}

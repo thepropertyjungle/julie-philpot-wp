@@ -1,0 +1,15 @@
+/*
+    ATTENTION
+    =========
+    /blade-views/components/map-leafletjs-search.blade.php
+
+    This page is used for search results displayed on
+    a LeafletJS Map. (https://leafletjs.com/)
+*/
+
+@use "../abstracts/colors" as c;
+
+#leaflet-map-container {
+    border: 1px solid c.$gray-300;
+    border-radius: 3px;
+}

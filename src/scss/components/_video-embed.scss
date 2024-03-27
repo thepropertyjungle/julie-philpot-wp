@@ -1,0 +1,17 @@
+/*
+    ATTENTION
+    =========
+    This is a universal video embed component.
+    The idea is to remove any issues with varying
+    URLs from both YouTube and Vimeo.
+
+    You can use it by including the component and
+    adding some parameters, for example:
+
+    @include('components/video-embed', [
+        'videoUrl' => $property['virtual_tours'][0]['media_url'],
+        'title' => $property['Address']['display_address']
+    ])
+*/
+
+@use "../abstracts/colors" as c;

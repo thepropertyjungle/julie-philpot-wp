@@ -1,0 +1,33 @@
+/*
+    ATTENTION
+    =========
+    /blade-views/components/rental-yield-calculator-sliders.blade.php
+
+    You can use this rental yield calculator on any
+    page by shortcode or @include on Blade templates.
+
+    [blade_dynamic_shortcode view_name="components/rental-yield-calculator-sliders"]
+*/
+
+@use "../abstracts/colors" as c;
+
+.rentalYield-property-value {
+    .tpj_property_value_info {
+    }
+}
+
+.rentalYield-rental-price {
+    .tpj_monthly_rental_info {
+    }
+}
+
+.rentalYield-estimate {
+    background-color: c.$gray-200;
+    padding: 20px;
+    p {
+        text-align: center;
+    }
+    .tpj_estimated_gross_rental {
+        font-weight: bold;
+    }
+}
