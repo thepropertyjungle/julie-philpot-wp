@@ -17,3 +17,24 @@ nav {
         }
     }
 }
+
+
+
+
+.pagination {
+    margin: 2.5em 0 !important;
+    li {
+      .page-link {
+        color: var(--e-global-color-primary);
+      }
+      &.active {
+        .page-link {
+          z-index: 3;
+          color: white;
+          background-color: var(--e-global-color-primary);
+          border-color: var(--e-global-color-primary);
+        }
+      }
+    }
+  }
+  

@@ -33,6 +33,93 @@
         });
     });
 
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Check if the page contains the .row-search element
+        if (document.querySelector('.row-search')) {
+            // Add the elementor-sticky--effects class to the .main-nav element
+            document.querySelector('.main-nav').classList.add('elementor-sticky--effects');
+        }
+    });
+
+
+    // Function to add the class if .row-search is present
+function addStickyEffects() {
+    if (document.querySelector('.row-search')) {
+        document.querySelector('.main-nav').classList.add('elementor-sticky--effects');
+    }
+}
+
+//change height of description on property single
+document.addEventListener('DOMContentLoaded', function() {
+    const description = document.querySelector('.description');
+    const readButton = document.querySelector('.read');
+
+    readButton.addEventListener('click', function() {
+      description.classList.toggle('height');
+    });
+  });
+
+
+  $(document).ready(function(){
+    $('.slider').slick({
+      // Add your Slick options here
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: true,
+      prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+      nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+      responsive: [
+        {
+          breakpoint: 767, // Adjust the breakpoint as needed
+          settings: {
+            slidesToShow: 1 // Change slidesToShow to 1 on mobile devices
+          }
+        }
+      ]
+    });
+});
+
+
+
+
+
+
+
+
+// Function to check if .elementor-sticky--effects is removed and add it back if necessary
+function checkStickyEffectsRemoval(mutationsList) {
+    for (let mutation of mutationsList) {
+        if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+            if (!mutation.target.classList.contains('elementor-sticky--effects')) {
+                addStickyEffects();
+            }
+        }
+    }
+}
+
+// Create a MutationObserver instance
+var observer = new MutationObserver(checkStickyEffectsRemoval);
+
+// Select the target node
+var targetNode = document.querySelector('.main-nav');
+
+// Configuration of the MutationObserver
+var config = { attributes: true, attributeFilter: ['class'] };
+
+// Start observing the target node for attribute changes
+observer.observe(targetNode, config);
+
+    
+
+
+ 
+
+
+
     // The browser viewport is set from the bottom.
     function isElementNearViewportBottom(el, distanceFromViewportBottom) {
         var rect = el.get(0).getBoundingClientRect();

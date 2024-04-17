@@ -8,3 +8,421 @@
 */
 
 @use "../abstracts/colors" as c;
+
+
+
+ 
+
+.single-tpj_properties {
+
+
+    & .list-property-card {
+         border:0px;
+         gap:30px;
+
+         @media (max-width:1024px) {
+            display: block;
+
+        }
+
+
+
+        @media (max-width:767px) {
+        padding: 30px 15px; 
+
+        }
+
+         &:hover {
+            box-shadow: none;
+         }
+
+
+        & .property__meta {
+
+            height: unset;
+            width: 70%;
+            padding: 0rem; 
+
+
+            @media (max-width:1024px) {
+                width: 100%;
+                max-width: 100%;
+
+
+            }
+
+
+                & h1 {
+                        color: var(--e-global-color-secondary);
+                        font-family: var(--e-global-typography-4e5099a-font-family), Sans-serif;
+                        font-size: var(--e-global-typography-4e5099a-font-size);
+                        font-weight: var(--e-global-typography-4e5099a-font-weight);
+                        line-height: var(--e-global-typography-4e5099a-line-height);
+                        letter-spacing: var(--e-global-typography-4e5099a-letter-spacing);
+                        word-spacing: var(--e-global-typography-4e5099a-word-spacing);
+                    
+                    }
+
+
+
+                 & .property-details__summary-links {
+                    gap: 20px;
+                    display: flex;
+                    margin: 20px 0px;
+                    flex-wrap: wrap;
+                    z-index: 5;
+ 
+                    
+                   
+
+                    & .property-details__summary-link {
+
+                        padding: 5px 10px;
+                        border: 1px solid;
+                        border-radius: 40px;
+                        color: black;
+
+                    }
+
+
+                 }
+
+                .description {
+                    margin: 20px 0px;
+               
+                            &.height {
+                        
+
+                                height: 350px;
+                                overflow: hidden;
+
+
+                                &:after {
+                                    content: ''; /* Add content to the pseudo-element */
+                                    position: absolute; /* Position it absolutely */
+                                    top: 12%;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 30%;
+                                    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%); /* Apply the gradient background */
+                                  
+                                    @media (max-width:1024px) {
+                                  
+                                    top: 9%;
+                                
+                                    }
+
+
+                                    @media (max-width:767px) {
+                                  
+                                        top:7%;
+                                    
+                                        }
+                                
+                                }
+
+
+
+                            }
+
+                            
+
+
+
+
+                            & h2 {
+
+                                font-family: var(--e-global-typography-9290ea4-font-family), Sans-serif;
+                                font-size: var(--e-global-typography-9290ea4-font-size);
+                                font-weight: var(--e-global-typography-9290ea4-font-weight);
+                                line-height: var(--e-global-typography-9290ea4-line-height);
+                                letter-spacing: var(--e-global-typography-9290ea4-letter-spacing);
+                                word-spacing: var(--e-global-typography-9290ea4-word-spacing);
+                            
+                            }
+
+
+                      }
+
+
+
+         & .read {
+
+
+        width: fit-content;
+        cursor: pointer;
+         
+
+        & p {
+            font-family: var(--e-global-typography-9290ea4-font-family), Sans-serif;
+            font-size: var(--e-global-typography-9290ea4-font-size);
+            font-weight: var(--e-global-typography-9290ea4-font-weight);
+            line-height: var(--e-global-typography-9290ea4-line-height);
+            letter-spacing: var(--e-global-typography-9290ea4-letter-spacing);
+            word-spacing: var(--e-global-typography-9290ea4-word-spacing);
+            color: var(--e-global-color-primary);
+            text-decoration: underline;
+
+
+        }
+
+
+         }        
+
+
+
+
+
+
+         & .map {
+
+        margin-top:20px;
+        border-top: 1px solid #EEECF3;
+        padding-top:40px;
+
+
+        & h4 {
+
+            font-family: var(--e-global-typography-d8015a3-font-family), Sans-serif;
+            font-size: var(--e-global-typography-d8015a3-font-size);
+            font-weight: var(--e-global-typography-d8015a3-font-weight);
+            line-height: var(--e-global-typography-d8015a3-line-height);
+            letter-spacing: var(--e-global-typography-d8015a3-letter-spacing);
+            word-spacing: var(--e-global-typography-d8015a3-word-spacing);
+            padding-bottom:20px;
+        
+        }
+
+
+
+
+
+         }
+
+
+
+
+        }
+
+
+     }
+
+
+
+
+ .row-search {
+
+
+& .col-md-12 {
+    @media (max-width:1024px) {
+     padding: 0px;
+    }
+    
+}
+
+
+ }    
+
+#ppropertyCarousel {
+
+
+    & .slick-prev {
+        position: absolute;
+        left: -64px;
+        bottom: 50%;
+
+        @media (max-width:1024px) { 
+
+            left: 20px;
+            background-color: white;
+            z-index: 2;
+
+        }
+
+        
+        @media (max-width:767px) { 
+
+            bottom: 44%;
+
+        }
+
+    }
+
+    & .slick-next {
+     position: absolute;
+     right: -64px;
+     bottom: 50%;
+
+     @media (max-width:1024px) { 
+
+        right: 20px;
+        background-color: white;
+        z-index: 2;
+
+    }
+
+    @media (max-width:767px) { 
+
+        bottom: 44%;
+
+    }
+
+    }
+
+   & .slick-track {
+    height: 430px;
+
+
+    @media (max-width:1024px) {
+
+        height:250px;
+
+    }
+
+   & .slick-slide {
+        padding: 0px 10px;
+
+
+        & img {
+
+            border-radius:8px;
+        }
+
+
+
+     }
+
+  }
+
+
+}
+
+
+
+& .property-details__summary-link.back {
+    color: #313131;
+    margin-bottom:20px;
+    display: block;
+
+
+    @media (max-width:767px) {
+    padding-left: 15px;
+
+    }    
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+
+.col.btn-col {
+ 
+    height: max-content;
+    border-radius: 8px;
+    background: var(--ffffff, #FFF);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.06), 0px 0px 2px 0px rgba(0, 0, 0, 0.16);
+    padding: 32px;
+    display: grid;
+    gap: 20px;
+
+& .pink {
+
+    padding: 10px;
+    width: 100%;
+    background-color: var(--e-global-color-primary);
+    color: white;
+    text-align: center;
+    border-radius: 40px;
+}
+
+
+& .clear {
+
+    padding: 10px;
+    width: 100%;
+    border: 1px solid var(--e-global-color-secondary);
+    color: var(--e-global-color-secondary);
+    text-align: center;
+    border-radius: 40px;
+}
+
+
+& .share {
+
+    padding-top: 10px;
+    width: 100%;
+    
+    color: var(--e-global-color-secondary);
+    text-align: center;
+     
+}
+
+
+
+
+}
+
+
+
+
+.row.calc {
+
+margin-top: 40px;
+margin-bottom:40px;
+
+
+
+& #mortgage_calculator {
+    display: flex;
+    gap: 30px;
+   
+   @media (max-width:1024px){
+   
+    flex-wrap: wrap;
+   }
+
+    & input {
+
+        border-radius:40px;
+    }
+
+
+    & .btn {
+        border-color: var(--e-global-color-primary);
+        background-color: var(--e-global-color-primary);
+        color:white;
+        border-radius: 40px;
+    }
+}
+
+& p {
+
+    margin-top: 20px;
+}
+
+& h2 {
+
+    font-family: var(--e-global-typography-9290ea4-font-family), Sans-serif;
+    font-size: var(--e-global-typography-9290ea4-font-size);
+    font-weight: var(--e-global-typography-9290ea4-font-weight);
+    line-height: var(--e-global-typography-9290ea4-line-height);
+    letter-spacing: var(--e-global-typography-9290ea4-letter-spacing);
+    word-spacing: var(--e-global-typography-9290ea4-word-spacing);
+    padding-bottom:20px;
+}
+
+}
+
+
+.modal-backdrop {
+z-index: 4 !important;
+
+}
